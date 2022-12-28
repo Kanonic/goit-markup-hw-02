@@ -15,6 +15,21 @@ body{
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
  }
+/* Приховування заголовка */
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 /* GENERAL CLASSES*/
 /*HEADER*/
@@ -222,4 +237,8 @@ list-style: none;
     align-items: center;
     letter-spacing: 0.04em;
     color: var(--snow-white);
+}
+
+.work-examples  {
+    text-decoration: none;
 }
