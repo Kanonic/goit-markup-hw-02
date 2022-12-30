@@ -1,0 +1,341 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    color: var(--navy-blue);
+    background-color:var(--snow-white);
+}
+
+
+ :root{
+    --snow-white: #ffffff;
+    --iris : #4D5AE5;
+    --ocean: #404BBF;
+    --navy-blue: #2E2F42;
+    --green: #31D0AA;
+    --slate: #434455;
+    --light-slate: #8E8F99;
+    --cornflower: #E7E9FC;
+    --cloud: #F4F4FD;
+
+    --main-margin: 120px;
+ }
+
+ *,
+ *::before,
+ *::after {
+    margin: 0;
+    padding: 0;
+ }
+
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Приховування заголовка */
+
+ .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+/* GENERAL CLASSES*/
+/*HEADER*/
+
+.header{
+    height: 72px;
+}
+
+.link-logo{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--navy-blue);
+    text-decoration: none;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 78px;
+    background-color: green;
+}
+
+.link-logo span{
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    text-decoration: none;
+}
+
+.position{
+    display:flex;
+}
+
+.site-position{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 332px;
+    background-color: red;
+}
+
+.list{
+list-style: none;
+}
+
+.nav-position {
+    margin: 0 40px;
+}
+
+.site-nav {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--navy-blue);
+    text-decoration: none;
+}
+
+
+.site-nav:hover,
+.site-nav:focus {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+}
+
+.site-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+    text-decoration: none;
+}
+
+.mail-position{
+    background-color: brown;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 40px;
+}
+
+.tell-position {
+    background-color: palevioletred;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 156px;
+}
+
+.site-link:hover,
+.site-link:focus {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--ocean);
+}
+
+/*MAIN*/
+
+.section {
+    margin-top: var(--main-margin);
+}
+.section-one {
+    background-color: var(--navy-blue);
+    width: 1440px;
+    height: 600px;
+
+}
+
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--snow-white);
+
+    padding: 188px 473px 48px 473px;
+}
+
+.button-service {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--snow-white);
+
+    background-color: var(--iris);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    padding: 16px 32px;
+    margin: 0 635px 188px 646px;
+
+}
+
+.button-service:hover {
+    background: var(--ocean);
+    cursor: pointer;
+} 
+
+.section-three{
+    background-color: var(--cloud);
+
+    padding: 120px 156px 120px 156px;
+}
+
+.heading-two{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+
+    margin-bottom: 72px;
+
+}
+
+.team-list{
+    background-color: var(--snow-white);
+    max-width: 264px;
+    min-width: 264px;
+}
+
+.heading-position{
+   padding: 32px 16px;
+    background-color: gold;
+}
+
+.heading-position h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+    background-color: red;
+}
+
+.heading-position p {
+
+background-color: green;
+}
+
+.heading-three{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.text-about {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+
+    max-width: 264px;
+}
+
+/* FOOTER*/
+
+.footer {
+    background-color: var(--navy-blue);
+}
+
+.footer-p {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--cornflower);
+
+    max-width: 264px;
+}
+
+.link-logo-footer {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--cloud);
+    text-decoration: none;
+}
+
+.link-logo-footer span {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.16;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--iris);
+    text-decoration: none;
+}
+
+/*PORTFOLIO CLASSES*/
+
+.btn {
+    background: var(--cloud);
+    border: 1px solid var(--cornflower);
+    border-radius: 4px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--iris);
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+
+    background: var(--ocean);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: var(--snow-white);
+}
+
+.work-examples  {
+    text-decoration: none;
+}
