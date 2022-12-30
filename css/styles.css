@@ -14,7 +14,24 @@ body{
     --light-slate: #8E8F99;
     --cornflower: #E7E9FC;
     --cloud: #F4F4FD;
+
+    --main-margin: 120px;
  }
+
+ *,
+ *::before,
+ *::after {
+    margin: 0;
+    padding: 0;
+ }
+
+.container{
+    max-width: 1158px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 /* Приховування заголовка */
 
  .visually-hidden {
@@ -35,7 +52,7 @@ body{
 /*HEADER*/
 
 .header{
-    background-color: var(--snow-white);
+    height: 72px;
 }
 
 .link-logo{
@@ -49,6 +66,11 @@ body{
     text-transform: uppercase;
     color: var(--navy-blue);
     text-decoration: none;
+
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 78px;
+    background-color: green;
 }
 
 .link-logo span{
@@ -64,8 +86,23 @@ body{
     text-decoration: none;
 }
 
+.position{
+    display:flex;
+}
+
+.site-position{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 332px;
+    background-color: red;
+}
+
 .list{
 list-style: none;
+}
+
+.nav-position {
+    margin: 0 40px;
 }
 
 .site-nav {
@@ -76,6 +113,7 @@ list-style: none;
     color: var(--navy-blue);
     text-decoration: none;
 }
+
 
 .site-nav:hover,
 .site-nav:focus {
@@ -94,6 +132,20 @@ list-style: none;
     text-decoration: none;
 }
 
+.mail-position{
+    background-color: brown;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 40px;
+}
+
+.tell-position {
+    background-color: palevioletred;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-right: 156px;
+}
+
 .site-link:hover,
 .site-link:focus {
     font-size: 16px;
@@ -103,8 +155,15 @@ list-style: none;
 }
 
 /*MAIN*/
+
+.section {
+    margin-top: var(--main-margin);
+}
 .section-one {
     background-color: var(--navy-blue);
+    width: 1440px;
+    height: 600px;
+
 }
 
 .hero-title {
@@ -114,6 +173,8 @@ list-style: none;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--snow-white);
+
+    padding: 188px 473px 48px 473px;
 }
 
 .button-service {
@@ -129,6 +190,10 @@ list-style: none;
     background-color: var(--iris);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
+    padding: 16px 32px;
+    margin: 0 635px 188px 646px;
+
 }
 
 .button-service:hover {
@@ -138,6 +203,8 @@ list-style: none;
 
 .section-three{
     background-color: var(--cloud);
+
+    padding: 120px 156px 120px 156px;
 }
 
 .heading-two{
@@ -147,6 +214,31 @@ list-style: none;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+
+    margin-bottom: 72px;
+
+}
+
+.team-list{
+    background-color: var(--snow-white);
+    max-width: 264px;
+    min-width: 264px;
+}
+
+.heading-position{
+   padding: 32px 16px;
+    background-color: gold;
+}
+
+.heading-position h3{
+    margin-top: 0;
+    margin-bottom: 8px;
+    background-color: red;
+}
+
+.heading-position p {
+
+background-color: green;
 }
 
 .heading-three{
@@ -163,6 +255,8 @@ list-style: none;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--slate);
+
+    max-width: 264px;
 }
 
 /* FOOTER*/
@@ -176,6 +270,8 @@ list-style: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--cornflower);
+
+    max-width: 264px;
 }
 
 .link-logo-footer {
